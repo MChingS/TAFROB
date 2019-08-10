@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="theGreat.master.cs" Inherits="theGreat" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+            TheGreat
+        </asp:ContentPlaceHolder>
+    </title>
+    <link href="mycss.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div class="menu">
+            
+            <ul >
+                
+                <li><a href="contact.aspx">
+                    <asp:Label ID="Contact" runat="server" Text="Contact"></asp:Label></a>
+                </li>
+                  <li><a href="about.aspx">
+                      <asp:Label ID="About" runat="server" Text="About"></asp:Label>
+                      </a></li>
+                
+                <li><a href="homepage.aspx">
+                    <asp:Label ID="Homepage" runat="server" Text="Homepage"></asp:Label>
+                    </a></li>
+                </ul>
+             </div>
+        <div class="wreper">
+            
+        
+            
+            <div class="content">
+                
+        <asp:ContentPlaceHolder id="body" runat="server">
+        
+
+
+
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server">
+
+            </asp:SqlDataSource>
+           
+       
+        </asp:ContentPlaceHolder>
+        
+                
+</div>
+           <%-- <div class="wreper1">
+                <asp:ContentPlaceHolder id="CreatingSeats" runat="server">
+
+                </asp:ContentPlaceHolder>
+
+       </div>--%>
+         </div>
+    </form>
+    <div class="rightbox" >
+             <h2>copyrights@theGreat 2019</h2>
+       </div>
+    
+</body>
+</html>
